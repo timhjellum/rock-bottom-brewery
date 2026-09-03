@@ -16,8 +16,8 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "version": "1.0.0",
-  "description": "Alpine Garden Solutions",
-  "name": "Alpine Garden Solutions",
+  "description": "Case Study",
+  "name": "Case Study",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",

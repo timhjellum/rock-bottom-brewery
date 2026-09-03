@@ -1,0 +1,21 @@
+{
+  "name": "Angels Landing",
+  "short_name": "Angels Landing",
+  "description": "A scroll-driven trail ascent visualizer for the Angels Landing hike in Zion National Park.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#241823",
+  "theme_color": "#c97a44",
+  "icons": [
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
