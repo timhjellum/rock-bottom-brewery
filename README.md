@@ -1,5 +1,5 @@
 # "case-study" #
-[![Netlify Status](https://api.netlify.com/api/v1/badges/92226321-012b-4815-a415-72381615950e/deploy-status)](https://app.netlify.com/projects/case-study/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7cc60fd0-89c1-40d9-901b-349a7182839f/deploy-status)](https://app.netlify.com/projects/rock-bottom-case-study/deploys)
 
 
 
