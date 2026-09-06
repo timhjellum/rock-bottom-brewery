@@ -31,6 +31,6 @@ deliverable/
 ### How to build this app ###
 
 * Clone the repository [rock-bottom---case-study](git clone rock-bottom---case-study.git)
-* `cd "case-study`
+* `cd case-study`
 * `npm install`
 * `run npm start`
