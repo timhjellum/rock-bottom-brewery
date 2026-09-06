@@ -1,0 +1,793 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Case Study">
+    <meta name="description" content="Case Study">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+<title>Rock Bottom - Portfolio - Case Study - Tim (Timber) Hjellum</title>
+<!-- Favicons -->
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="/images/favicon-96x96.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/images/android-chrome-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="512x512"
+			href="/images/android-chrome-512x512.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380..700;1,9..144,380..600&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+  :root{
+    --charcoal:#1b1712;
+    --charcoal-soft:#26201a;
+    --charcoal-line: rgba(244,236,219,0.14);
+    --slate:#1d2a23;
+    --slate-deep:#131c17;
+    --slate-line: rgba(244,236,219,0.16);
+    --cream:#f3ead6;
+    --cream-deep:#e8dabb;
+    --cream-line: rgba(42,33,23,0.14);
+    --copper:#bf7530;
+    --copper-bright:#e2a35d;
+    --gold:#e7ac52;
+    --ink:#2a2117;
+    --maxw: 1180px;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--charcoal);
+    color:var(--cream);
+    font-family:'Work Sans', ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', Georgia, 'Times New Roman', serif;
+    margin:0;
+    text-wrap:balance;
+    font-weight:600;
+  }
+  p{ margin:0; }
+  .container{ max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+  section{ overflow-x:hidden; }
+
+  .visually-hidden{
+    position:absolute; width:1px; height:1px; overflow:hidden;
+    clip:rect(0 0 0 0); white-space:nowrap; border:0; padding:0; margin:-1px;
+  }
+
+  a:focus-visible, button:focus-visible{
+    outline:2.5px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:fixed; inset:0 0 auto 0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 28px;
+    background:transparent;
+    transition:background 280ms ease, padding 280ms ease, box-shadow 280ms ease;
+  }
+  .nav.is-scrolled{
+    background:rgba(27,23,18,0.92);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    padding:12px 28px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.28);
+    border-bottom:1px solid var(--charcoal-line);
+  }
+  .brandmark{
+    display:flex; flex-direction:column; line-height:1;
+    text-decoration:none; color:var(--cream);
+    letter-spacing:0.02em;
+  }
+  .brandmark strong{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(1.15rem, 1.6vw, 1.45rem);
+    letter-spacing:0.01em;
+  }
+  .brandmark span{
+    font-family:'Work Sans', sans-serif;
+    font-size:0.62rem;
+    letter-spacing:0.34em;
+    text-transform:uppercase;
+    color:var(--copper-bright);
+    margin-top:4px;
+  }
+  .nav-links{
+    display:flex; align-items:center; gap:34px;
+    list-style:none; margin:0; padding:0;
+  }
+  .nav-links a{
+    text-decoration:none;
+    font-size:0.86rem;
+    font-weight:500;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    color:var(--cream);
+    opacity:0.88;
+    position:relative;
+    padding-bottom:4px;
+  }
+  .nav-links a::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:0;
+    height:2px; background:var(--copper-bright);
+    transform:scaleX(0); transform-origin:left;
+    transition:transform 220ms ease;
+  }
+  .nav-links a:hover{ opacity:1; }
+  .nav-links a:hover::after{ transform:scaleX(1); }
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--copper);
+    color:var(--cream) !important;
+    padding:11px 22px;
+    border-radius:3px;
+    font-size:0.82rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    text-decoration:none;
+    opacity:1 !important;
+    transition:background 200ms ease, transform 200ms ease;
+  }
+  .nav-cta::after{ display:none; }
+  .nav-cta:hover{ background:var(--copper-bright); transform:translateY(-1px); }
+
+  .nav-toggle{
+    display:none; flex-direction:column; justify-content:center; gap:5px;
+    width:34px; height:30px; background:none; border:0; cursor:pointer; padding:0;
+  }
+  .nav-toggle span{ display:block; height:2px; background:var(--cream); border-radius:2px; }
+
+  @media (max-width:920px){
+    .nav-links{
+      position:fixed; top:0; right:0; height:100vh; width:min(78vw, 320px);
+      background:var(--charcoal-soft);
+      flex-direction:column; align-items:flex-start; justify-content:center;
+      gap:26px; padding:40px 36px;
+      transform:translateX(100%);
+      transition:transform 320ms ease;
+      box-shadow:-14px 0 36px rgba(0,0,0,0.4);
+  }
+    .nav-links.is-open{ transform:translateX(0); }
+    .nav-cta{ margin-top:6px; }
+    .nav-toggle{ display:flex; }
+  }
+
+  /* ---------- Hero slider ---------- */
+  .hero{
+    position:relative;
+    height:min(94vh, 880px);
+    min-height:560px;
+    width:100%;
+    overflow:hidden;
+    background:var(--charcoal);
+  }
+  .slide{
+    position:absolute; inset:0;
+    display:flex; align-items:flex-end;
+    opacity:0; visibility:hidden;
+    transition:opacity 900ms ease;
+    padding:0 0 92px;
+  }
+  .slide.is-active{ opacity:1; visibility:visible; z-index:2; }
+  .slide-bg{
+    position:absolute; inset:-6% -6%;
+    background-size:cover; background-position:center;
+    transform:scale(1.06);
+    transition:transform 7000ms linear;
+  }
+  .slide.is-active .slide-bg{ transform:scale(1); }
+  @media (prefers-reduced-motion: reduce){
+    .slide-bg{ transition:none; transform:scale(1) !important; }
+  }
+  .slide-bg::after{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      linear-gradient(0deg, rgba(20,16,12,0.92) 0%, rgba(20,16,12,0.42) 46%, rgba(20,16,12,0.18) 100%);
+  }
+  .slide[data-tone="copper"] .slide-bg{ background-image: radial-gradient(120% 130% at 18% 12%, #a85a26 0%, #6d3717 32%, #2c1a10 62%, #17110c 100%); }
+  .slide[data-tone="stout"] .slide-bg{ background-image: radial-gradient(120% 130% at 82% 8%, #3a2a1c 0%, #24201a 34%, #171512 62%, #100e0b 100%); }
+  .slide[data-tone="hop"] .slide-bg{ background-image: radial-gradient(120% 130% at 20% 88%, #4c5a2e 0%, #33361f 30%, #221e17 60%, #15120e 100%); }
+  .slide-bg svg{ position:absolute; inset:0; width:100%; height:100%; opacity:0.5; mix-blend-mode:overlay; }
+
+  .slide-content{ position:relative; z-index:1; }
+  .slide-eyebrow{
+    display:inline-block;
+    font-size:0.78rem; letter-spacing:0.32em; text-transform:uppercase;
+    color:var(--copper-bright); font-weight:600; margin-bottom:18px;
+  }
+  .slide h1{
+    font-size:clamp(2.3rem, 5.6vw, 4.6rem);
+    color:var(--cream);
+    max-width:15ch;
+    font-weight:600;
+    line-height:1.02;
+  }
+  .slide .accent-word{ font-style:italic; font-weight:500; color:var(--gold); }
+  .slide-sub{
+    margin-top:22px;
+    max-width:52ch;
+    font-size:clamp(1rem, 1.6vw, 1.18rem);
+    color:rgba(243,234,214,0.86);
+  }
+  .slide-cite{
+    margin-top:22px; font-family:'Fraunces', serif; font-style:italic;
+    color:rgba(243,234,214,0.7); font-size:1.02rem;
+  }
+  .hero-ctas{ margin-top:34px; display:flex; gap:16px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:14px 26px; border-radius:3px;
+    font-size:0.9rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em;
+    text-decoration:none; border:1.5px solid transparent; cursor:pointer;
+    transition:background 200ms ease, color 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+  .btn-primary{ background:var(--copper); color:var(--cream); }
+  .btn-primary:hover{ background:var(--copper-bright); transform:translateY(-1px); }
+  .btn-ghost{ background:transparent; color:var(--cream); border-color:rgba(243,234,214,0.5); }
+  .btn-ghost:hover{ border-color:var(--cream); background:rgba(243,234,214,0.08); }
+
+  .hero-controls{
+    position:absolute; z-index:3; bottom:34px; left:0; right:0;
+    display:flex; align-items:center; justify-content:center; gap:22px;
+  }
+  .hero-arrow{
+    background:rgba(27,23,18,0.5); border:1px solid rgba(243,234,214,0.4);
+    color:var(--cream); width:40px; height:40px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    transition:background 200ms ease, border-color 200ms ease;
+  }
+  .hero-arrow:hover{ background:rgba(191,117,48,0.85); border-color:var(--copper-bright); }
+  .hero-dots{ display:flex; gap:10px; }
+  .hero-dot{
+    width:9px; height:9px; border-radius:50%; border:0; padding:0;
+    background:rgba(243,234,214,0.35); cursor:pointer;
+    transition:background 200ms ease, transform 200ms ease;
+  }
+  .hero-dot.is-active{ background:var(--gold); transform:scale(1.25); }
+
+  @media (max-width:720px){
+    .hero{ height:min(100vh, 720px); }
+    .slide{ padding-bottom:74px; }
+    .hero-ctas{ flex-direction:column; align-items:flex-start; }
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 700ms ease, transform 700ms ease; }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+
+  /* ---------- Story section ---------- */
+  .story{ background:var(--cream); color:var(--ink); padding:112px 0 96px; }
+  .eyebrow{
+    font-size:0.78rem; letter-spacing:0.3em; text-transform:uppercase;
+    font-weight:600; color:var(--copper);
+  }
+  .story-grid{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:start;
+    margin-top:18px;
+  }
+  .story h2{ font-size:clamp(1.9rem, 3.4vw, 2.7rem); color:var(--ink); margin-top:10px; }
+  .story .lede{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:400;
+    font-size:1.35rem; line-height:1.5; margin-top:24px; color:var(--ink);
+  }
+  .story p.body-copy{ margin-top:18px; font-size:1.02rem; max-width:62ch; color:rgba(42,33,23,0.86); }
+
+  .stat-card{
+    background:var(--cream-deep);
+    border:1px solid var(--cream-line);
+    border-radius:6px;
+    padding:34px 28px;
+  }
+  .stat-grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px 20px; }
+  .stat-num{
+    font-family:'Fraunces', serif; font-weight:700;
+    font-size:clamp(1.9rem, 3vw, 2.5rem);
+    color:var(--copper);
+    font-variant-numeric:tabular-nums;
+    line-height:1;
+  }
+  .stat-label{
+    margin-top:8px; font-size:0.78rem; letter-spacing:0.05em;
+    text-transform:uppercase; color:rgba(42,33,23,0.7); font-weight:600;
+  }
+
+  @media (max-width:860px){
+    .story-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- Features ---------- */
+  .features{ background:var(--charcoal); padding:104px 0; }
+  .features .section-head{ max-width:56ch; }
+  .features h2{ color:var(--cream); font-size:clamp(1.8rem, 3vw, 2.4rem); margin-top:10px; }
+  .feature-grid{
+    margin-top:56px; display:grid; grid-template-columns:repeat(3, 1fr); gap:2px;
+    background:var(--charcoal-line);
+    border:1px solid var(--charcoal-line);
+  }
+  .feature-card{
+    background:var(--charcoal); padding:38px 32px;
+    display:flex; flex-direction:column; gap:18px;
+  }
+  .feature-icon{ width:44px; height:44px; color:var(--copper-bright); }
+  .feature-card h3{ color:var(--cream); font-size:1.28rem; font-weight:600; }
+  .feature-card p{ color:rgba(243,234,214,0.72); font-size:0.97rem; }
+
+  @media (max-width:860px){
+    .feature-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- Chalkboard specials ---------- */
+  .specials{
+    position:relative;
+    background:var(--slate);
+    padding:108px 0 100px;
+    color:var(--cream);
+  }
+  .specials::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.035 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    pointer-events:none;
+  }
+  .specials::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:0; height:22px;
+    background:linear-gradient(180deg, transparent, rgba(0,0,0,0.35));
+  }
+  .specials .section-head{ position:relative; text-align:center; max-width:640px; margin-inline:auto; }
+  .specials .eyebrow{ color:var(--gold); }
+  .specials h2{ color:var(--cream); margin-top:10px; font-size:clamp(1.8rem, 3vw, 2.4rem); }
+  .specials-grid{
+    position:relative; margin-top:60px;
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+  }
+  .special-card{
+    border:1.5px dashed var(--slate-line);
+    border-radius:4px;
+    padding:34px 26px;
+    text-align:center;
+    background:rgba(20,29,24,0.35);
+  }
+  .special-day{
+    font-size:0.78rem; letter-spacing:0.28em; text-transform:uppercase;
+    color:var(--copper-bright); font-weight:600;
+  }
+  .special-name{
+    font-family:'Caveat', cursive; font-weight:700;
+    font-size:2.5rem; line-height:1.05; color:var(--cream); margin-top:10px;
+  }
+  .special-price{
+    font-family:'Fraunces', serif; font-weight:700; color:var(--gold);
+    font-size:1.6rem; margin-top:6px;
+  }
+  .special-desc{ margin-top:14px; font-size:0.95rem; color:rgba(243,234,214,0.78); }
+
+  @media (max-width:860px){
+    .specials-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- Rewards band ---------- */
+  .rewards{
+    background:linear-gradient(120deg, #a3611f, #7c4519 70%);
+    padding:88px 0;
+  }
+  .rewards-inner{
+    display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;
+  }
+  .rewards h2{ color:var(--cream); font-size:clamp(1.7rem, 2.9vw, 2.3rem); max-width:16ch; }
+  .rewards p{ margin-top:14px; max-width:48ch; color:rgba(243,234,214,0.92); }
+  .rewards .btn-primary{ background:var(--charcoal); }
+  .rewards .btn-primary:hover{ background:var(--charcoal-soft); }
+
+  /* ---------- Footer ---------- */
+  footer{ background:var(--charcoal-soft); padding:76px 0 34px; border-top:1px solid var(--charcoal-line); }
+  .footer-grid{
+    display:grid; grid-template-columns:1.3fr repeat(3, 1fr); gap:44px;
+  }
+  footer .brandmark strong{ font-size:1.5rem; }
+  footer .brand-desc{ margin-top:16px; max-width:38ch; color:rgba(243,234,214,0.68); font-size:0.94rem; }
+  .footer-col h4{
+    font-size:0.76rem; letter-spacing:0.24em; text-transform:uppercase;
+    color:var(--copper-bright); font-weight:600; font-family:'Work Sans', sans-serif;
+  }
+  .footer-col ul{ list-style:none; margin:18px 0 0; padding:0; display:flex; flex-direction:column; gap:12px; }
+  .footer-col a{ text-decoration:none; color:rgba(243,234,214,0.82); font-size:0.93rem; }
+  .footer-col a:hover{ color:var(--cream); text-decoration:underline; }
+  .footer-bottom{
+    margin-top:64px; padding-top:26px; border-top:1px solid var(--charcoal-line);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:0.8rem; color:rgba(243,234,214,0.5);
+  }
+  .footer-bottom a{ text-decoration:none; color:inherit; }
+  .footer-bottom a:hover{ color:var(--cream); }
+
+  @media (max-width:860px){
+    .footer-grid{ grid-template-columns:1fr 1fr; }
+  }
+  @media (max-width:520px){
+    .footer-grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+
+<nav class="nav" id="siteNav">
+  <a href="#top" class="brandmark">
+    <strong>Rock Bottom</strong>
+    <span>Restaurant &amp; Brewery</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#specials">Daily Specials</a></li>
+    <li><a href="https://www.rockbottom.com/rewards">Rewards</a></li>
+    <li><a href="http://www.rockbottomcareers.com/">Careers</a></li>
+    <li><a href="https://www.rockbottom.com/contact">Contact</a></li>
+    <li><a class="nav-cta" href="https://rockbottom.olo.com/">Order Online</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="hero" id="top" aria-roledescription="carousel" aria-label="Rock Bottom Brewery highlights">
+
+  <div class="slide is-active" data-tone="copper" role="group" aria-roledescription="slide" aria-label="1 of 4">
+    <div class="slide-bg"></div>
+    <div class="container slide-content">
+      <span class="slide-eyebrow">Est. 1991 &middot; Denver, Colorado</span>
+      <h1>Serious about our food.<br><span class="accent-word">Crazy</span> about our beer.</h1>
+      <p class="slide-sub">A friendly neighborhood bar, a gourmet eatery, and an award-winning craft brewery &mdash; all under one roof, at every Rock Bottom location.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://rockbottom.olo.com/">Order Online</a>
+        <a class="btn btn-ghost" href="#story">Our Story</a>
+    </div>
+  </div>
+          </div>
+
+  <div class="slide" data-tone="hop" role="group" aria-roledescription="slide" aria-label="2 of 4">
+    <div class="slide-bg"></div>
+    <div class="container slide-content">
+      <span class="slide-eyebrow">From Our On-Site Brewmasters</span>
+      <h1>Thousands of original brews.<br>Hundreds of medals.</h1>
+      <p class="slide-sub">Every location has its own local Brewmaster tapping unique house-brewed beers and seltzers &mdash; alongside house-made cocktails, wine, and spirits.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://rockbottom.olo.com/">Order Online</a>
+        <a class="btn btn-ghost" href="#specials">See Daily Specials</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="slide" data-tone="stout" role="group" aria-roledescription="slide" aria-label="3 of 4">
+    <div class="slide-bg"></div>
+    <div class="container slide-content">
+      <span class="slide-eyebrow">A Rock Bottom Original</span>
+      <h1>&ldquo;They who drink beer<br><span class="accent-word">think</span> beer.&rdquo;</h1>
+      <p class="slide-cite">&mdash; Washington Irving</p>
+      <p class="slide-sub">Good friends. Great food. Great beer. That's been the Rock Bottom promise since day one.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://rockbottom.olo.com/">Order Online</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-tone="copper" role="group" aria-roledescription="slide" aria-label="4 of 4">
+    <div class="slide-bg"></div>
+    <div class="container slide-content">
+      <span class="slide-eyebrow">America's OG Brewery</span>
+      <h1>11 locations.<br>One <span class="accent-word">original</span> recipe for good times.</h1>
+      <p class="slide-sub">The first Rock Bottom Restaurant &amp; Brewery opened in the heart of Downtown Denver in 1991. Thirty years later, we're still pouring.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://www.rockbottom.com/rewards">Join Rock Bottom Rewards</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-controls">
+    <button class="hero-arrow" id="heroPrev" aria-label="Previous slide">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 2 4 8l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    <div class="hero-dots" id="heroDots"></div>
+    <button class="hero-arrow" id="heroNext" aria-label="Next slide">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 2l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="story" id="story">
+    <div class="container story-grid">
+      <div class="reveal">
+        <span class="eyebrow">America's OG Brewery</span>
+        <h2>Thirty-plus years, eleven taprooms, one original idea.</h2>
+        <p class="lede">The first Rock Bottom Restaurant &amp; Brewery opened in the heart of Downtown Denver in 1991.</p>
+        <p class="body-copy">Fast-forward 30 years&hellip; Rock Bottom now has 11 locations across the United States, with thousands of original brews and hundreds of the industry's most esteemed medals and awards. We're a friendly neighborhood bar, a gourmet eatery, and an award-winning craft brewery &mdash; each location run by its own local, on-site Brewmaster tapping unique beers and seltzers in-house. Our chefs serve scratch-made dishes built to complement our award-winning pints, house-made cocktails, wine, and spirits.</p>
+    </div>
+      <div class="stat-card reveal">
+        <div class="stat-grid">
+          <div>
+            <div class="stat-num">1991</div>
+            <div class="stat-label">Founded in Denver</div>
+  </div>
+          <div>
+            <div class="stat-num">11</div>
+            <div class="stat-label">Locations Nationwide</div>
+          </div>
+          <div>
+            <div class="stat-num">1,000s</div>
+            <div class="stat-label">Original Brews Poured</div>
+      </div>
+        <div>
+            <div class="stat-num">100s</div>
+            <div class="stat-label">Medals &amp; Awards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Under One Roof</span>
+        <h2>Bar. Eatery. Brewery. All in-house.</h2>
+      </div>
+      <div class="feature-grid reveal">
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M24 4c6 6 10 12 10 19a10 10 0 1 1-20 0c0-7 4-13 10-19Z" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M24 15v18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <h3>Local Brewmasters</h3>
+          <p>Every Rock Bottom has its own on-site Brewmaster, tapping unique house-brewed beers and seltzers you won't find anywhere else.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M14 6v14a4 4 0 0 0 4 4h0v18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M14 6v10M18 6v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M32 6c-4 3-4 9-4 14 0 3 2 4 4 4s4-1 4-4c0-5 0-11-4-14ZM32 24v18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Scratch-Made Kitchen</h3>
+          <p>Our chefs cook scratch-made dishes designed to complement our pints &mdash; from gourmet pub fare to weekly specials worth planning around.</p>
+        </article>
+        <article class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M12 12h18v20a6 6 0 0 1-6 6h-6a6 6 0 0 1-6-6V12Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+            <path d="M30 18h4a4 4 0 0 1 0 8h-4" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M16 8v3M20 8v3M24 8v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <h3>Award-Winning Pours</h3>
+          <p>House-made cocktails, wine, spirits, and pints that have earned hundreds of the industry's most esteemed medals and awards.</p>
+        </article>
+    </div>
+  </div>
+  </section>
+
+  <section class="specials" id="specials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Chalked Up Fresh, Every Week</span>
+        <h2>All-Day Specials</h2>
+    </div>
+      <div class="specials-grid reveal">
+        <div class="special-card">
+          <div class="special-day">Monday</div>
+          <div class="special-name">Steak Night</div>
+          <div class="special-price">$24.99</div>
+          <p class="special-desc">A 12oz Ribeye dinner paired with mashed potatoes and green beans.</p>
+        </div>
+        <div class="special-card">
+          <div class="special-day">Wednesday</div>
+          <div class="special-name">$5 Drink Deals</div>
+          <div class="special-price">$5</div>
+          <p class="special-desc">$5 White Claws, PBR tall boys, and select shots.</p>
+        </div>
+        <div class="special-card">
+          <div class="special-day">Thursday</div>
+          <div class="special-name">Thirsty Thursday</div>
+          <div class="special-price">$3 / $5</div>
+          <p class="special-desc">$3 house-brewed and national pints, plus $5 house margaritas.</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="rewards">
+    <div class="container rewards-inner">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--charcoal)">Rock Bottom Rewards</span>
+        <h2>Every pint and plate earns you something back.</h2>
+        <p>Sign up through the Rock Bottom Rewards Portal and start earning points toward dining perks at any of our 11 locations.</p>
+      </div>
+      <a class="btn btn-primary reveal" href="https://www.rockbottom.com/rewards">Join Rewards</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brandmark">
+          <strong>Rock Bottom</strong>
+          <span>Restaurant &amp; Brewery</span>
+        </a>
+        <p class="brand-desc">A friendly neighborhood bar, gourmet eatery, and award-winning craft brewery, pouring original beers since 1991.</p>
+    </div>
+      <div class="footer-col">
+        <h4>Order &amp; Visit</h4>
+        <ul>
+          <li><a href="https://www.rockbottom.com/order">Order Page</a></li>
+          <li><a href="https://rockbottom.olo.com/">Order Online</a></li>
+          <li><a href="https://www.rockbottom.com/rewards">Rewards Portal</a></li>
+          <li><a href="https://www.rockbottom.com/all-day-specials">All-Day Specials</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Give Back</h4>
+        <ul>
+          <li><a href="https://www.rockbottom.com/donation-request">Donation Request</a></li>
+          <li><a href="https://www.rockbottom.com/fundraiser">Host a Fundraiser</a></li>
+          <li><a href="https://www.rockbottom.com/our-story">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://www.rockbottom.com/contact">Contact</a></li>
+          <li><a href="http://www.rockbottomcareers.com/">Careers</a></li>
+          <li><a href="https://www.rockbottom.com/accessibility">Accessibility Assistance</a></li>
+          <li><a href="https://www.rockbottom.com/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Rock Bottom Restaurant &amp; Brewery</span>
+      <a href="https://get.popmenu.com/">Made with Popmenu</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Nav scroll state
+  var nav = document.getElementById('siteNav');
+  var onScroll = function(){
+    if(window.scrollY > 40){ nav.classList.add('is-scrolled'); }
+    else { nav.classList.remove('is-scrolled'); }
+  };
+  document.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // Mobile nav toggle
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Hero slider
+  (function(){
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+    var dotsWrap = document.getElementById('heroDots');
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var current = 0;
+    var timer;
+
+    slides.forEach(function(_, i){
+      var dot = document.createElement('button');
+      dot.className = 'hero-dot' + (i === 0 ? ' is-active' : '');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      dot.addEventListener('click', function(){ goTo(i); reset(); });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.children);
+
+    function goTo(index){
+      slides[current].classList.remove('is-active');
+      dots[current].classList.remove('is-active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('is-active');
+      dots[current].classList.add('is-active');
+    }
+    function next(){ goTo(current + 1); }
+    function prev(){ goTo(current - 1); }
+    function start(){
+      if(prefersReduced) return;
+      timer = setInterval(next, 6500);
+    }
+    function reset(){ clearInterval(timer); start(); }
+
+    document.getElementById('heroNext').addEventListener('click', function(){ next(); reset(); });
+    document.getElementById('heroPrev').addEventListener('click', function(){ prev(); reset(); });
+
+    var hero = document.querySelector('.hero');
+    hero.addEventListener('mouseenter', function(){ clearInterval(timer); });
+    hero.addEventListener('mouseleave', start);
+
+    start();
+  })();
+
+  // Scroll reveal
+  (function(){
+    var items = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){
+      items.forEach(function(el){ el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+    });
+    }, { threshold: 0.15 });
+    items.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
