@@ -1,0 +1,70 @@
+{
+	"skillsHeader": "Skills Header",
+	"skillsDesc": "This is the skills description",
+	"skills": [
+		{
+			"skillName": "Stakeholder Alignment",
+			"skillDesc": "Facilitated Discovery, Requirements Analysis, Stakeholder Interviews, Iterative Design, and Design Reviews to align business objectives with user needs."
+		},
+		{
+			"skillName": "Content Inventory",
+			"skillDesc": "Conducted comprehensive content inventories to catalog existing digital assets, assess content structure and quality, and establish a foundation for information architecture and migration."
+		},
+		{
+			"skillName": "Taxonomy",
+			"skillDesc": "Developed content taxonomies and classification structures to organize information, improve findability, and establish consistent relationships across the system."
+		},
+		{
+			"skillName": "User Personas",
+			"skillDesc": "Conducted persona development to establish user profiles, define key goals and behaviors, and inform the overall UX and information architecture."
+		},
+		{
+			"skillName": "User Flows",
+			"skillDesc": "Designed User Flows and interaction patterns to simplify complex workflows"
+		},
+		{
+			"skillName": "Wireframes",
+			"skillDesc": "Created Wireframes to define page structure, functionality, and user interactions"
+		},
+		{
+			"skillName": "Interactive Prototypes",
+			"skillDesc": "Developed Interactive Prototypes to validate concepts and communicate design solutions"
+		},
+		{
+			"skillName": "Sitemaps",
+			"skillDesc": "Developed Site Architecture and Sitemaps to define content hierarchy, navigation, and overall digital structure"
+		}
+	],
+	"tags": [
+		{
+			"tagName": "Information Architecture"
+		},
+		{
+			"tagName": "User-Centered Design"
+		},
+		{
+			"tagName": "Interaction Design"
+		},
+		{
+			"tagName": "UX Strategy"
+		},
+		{
+			"tagName": "User Flows"
+		},
+		{
+			"tagName": "Prototyping"
+		},
+		{
+			"tagName": "Wireframing"
+		},
+		{
+			"tagName": "Sitemaps"
+		},
+		{
+			"tagName": "Taxonomies"
+		},
+		{
+			"tagName": "Usability Testing"
+		}
+	]
+}
