@@ -1,6 +1,17 @@
 {
-	"skillsHeader": "Skills Header",
+	"skillsHeader": "My Role",
 	"skillsDesc": "This is the skills description",
+	
+	"roles": [
+		{
+			"roleName": "Information Architect"
+		},
+		{
+			"roleName": "UX Designer"
+		}
+	],
+	
+	
 	"skills": [
 		{
 			"skillName": "Stakeholder Alignment",
